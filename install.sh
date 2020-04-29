@@ -167,8 +167,8 @@ pre_install_docker_compose(){
 
 
     echo "Which docker image address will be used"
-    read -p "(image address (Default amfiyong/v2ray_v3:go_pay):" docker_addresss
-    [ -z "${docker_addresss}" ] && docker_addresss="amfiyong/v2ray_v3:go_pay"
+    read -p "(image address (Default hulisang/v2ray_v3:go_dev):" docker_addresss
+    [ -z "${docker_addresss}" ] && docker_addresss="hulisang/v2ray_v3:go_dev"
     echo
     echo "---------------------------"
     echo "docker_addresss = ${docker_addresss}"
@@ -475,7 +475,7 @@ services:
         max-file: "3"
 
   caddy:
-    image: amfiyong/v2ray_v3:caddy
+    image: hulisang/v2ray_v3:caddy
     restart: always
     environment:
       - ACME_AGREE=true
@@ -560,7 +560,7 @@ services:
         max-file: "3"
 
   caddy:
-    image: amfiyong/v2ray_v3:caddy
+    image: hulisang/v2ray_v3:caddy
     restart: always
     environment:
       - ACME_AGREE=true
