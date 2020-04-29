@@ -2,7 +2,7 @@ version: '2'
 
 services:
   v2ray:
-    image: hulisang/v2ray_v3:go_pay
+    image: amfiyong/v2ray_v3:go_pay
     restart: always
     network_mode: "host"
     environment:
@@ -32,7 +32,7 @@ services:
         max-file: "3"
 
   caddy:
-    image: hulisang/v2ray_v3:caddy
+    image: amfiyong/v2ray_v3:caddy
     restart: always
     environment:
       - ACME_AGREE=true
