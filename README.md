@@ -18,7 +18,7 @@
 ```
 mkdir v2ray-agent  &&  \
 cd v2ray-agent && \
-curl https://raw.githubusercontent.com/hulisang/v2ray-sspanel-v3-mod_Uim-plugin/dev/install.sh -o install.sh && \
+curl https://raw.githubusercontent.com/amfiyong/v2ray-sspanel-v3-mod_Uim-plugin/dev/install.sh -o install.sh && \
 chmod +x install.sh && \
 bash install.sh
 ```
